@@ -9,3 +9,4 @@
 - TotalScanner
 - WebCam
 - ChatBot(Local Knowledge Base)
+- Google ADK
