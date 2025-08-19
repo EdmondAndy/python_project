@@ -8,3 +8,4 @@
 - ToDoWebApp
 - TotalScanner
 - WebCam
+- ChatBot(Local Knowledge Base)
