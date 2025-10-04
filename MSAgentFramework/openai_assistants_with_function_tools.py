@@ -109,13 +109,24 @@ async def mixed_tools_example() -> None:
         )
         print(f"Agent: {result}\n")
 
-
 async def main() -> None:
     print("=== OpenAI Assistants Chat Client Agent with Function Tools Examples ===\n")
 
-    await tools_on_agent_level()
-    await tools_on_run_level()
-    await mixed_tools_example()
+    import logging
+
+    from agent_framework.devui import serve
+
+    #setup logging
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    logger = logging.getLogger(__name__)
+
+    logger.info("Starting DevUI on http://localhost:7860")
+    logger.info("Entity ID: agent_framework_devui")
+    serve(entities=[], port=7860, auto_open=True)
+
+    # await tools_on_agent_level()
+    # await tools_on_run_level()
+    # await mixed_tools_example()
 
 
 if __name__ == "__main__":
