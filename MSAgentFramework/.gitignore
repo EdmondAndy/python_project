@@ -34,5 +34,8 @@ htmlcov/
 # Misc
 *.orig
 *.rej
+pyvenv.cfg
 # Agent Framework
 agent_framework_cache/
+
+bin/
